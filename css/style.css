@@ -73,19 +73,42 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    background-image: url(../img/header-bg.png);
+    height: 750px;
+}
+
 .header-top {
     font-size: 14px;
     line-height: 20px;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 44px;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
 .menu-item:not(:first-child) {
     padding-left: 50px;
+}
+
+.header-top__call {
+    display: grid;
+}
+
+.header-bottom {
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 121px;
 }

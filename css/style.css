@@ -154,8 +154,7 @@ body {
 
 .bottom__item-left,
 .bottom__item-center,
-.bottom__item-right
- {
+.bottom__item-right {
     position: relative;
 }
 
@@ -183,8 +182,50 @@ body {
     position: absolute;
     top: -10px;
     left: -55px;
-    content: '';    
+    content: '';
     background-image: url(../img/icons/rigger.svg);
     width: 39px;
     height: 40px;
+}
+
+.about {
+    padding: 153px 0 137px;
+}
+
+.about__inner-top {
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__title {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 58px;
+}
+
+.about__description {
+    width: 829px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.about__content {
+    margin-top: 20px;
+}
+
+.about__inner-bottom {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/about-bg.jpg);
+    margin-top: 125px;
+}
+
+.inner-bottom__description {
+    width: 829px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 71px 0;
+    margin-left: 20px;
 }

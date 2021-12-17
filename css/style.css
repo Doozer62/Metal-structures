@@ -132,7 +132,8 @@ body {
     margin-top: 20px;
 }
 
-.header-btn {
+.header-btn,
+.services__btn {
     background-color: #1B6EB8;
     border-radius: 6px;
     font-weight: bold;
@@ -198,11 +199,24 @@ body {
     justify-content: space-around;
 }
 
-.about__title {
+.about__title,
+.services__title {
+    color: #000;
+    position: relative;
     font-family: 'Play', sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 58px;
+    z-index: 10;
+}
+
+.about__title::before {
+    position: absolute;
+    content: '';
+    border-bottom: solid #B3DBFF 13px;
+    width: 141px;
+    top: 32px;
+    z-index: -5;
 }
 
 .about__description {
@@ -228,4 +242,116 @@ body {
     line-height: 30px;
     padding: 71px 0;
     margin-left: 20px;
+}
+
+.services__title {
+    position: relative;
+}
+
+.services__title::before {
+    position: absolute;
+    content: '';
+    border-bottom: solid #B3DBFF 13px;
+    width: 149px;
+    top: 32px;
+    z-index: -5;
+}
+
+.services__top {
+    font-family: 'Play', sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__top-title {
+    margin-top: 147px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.services__left-inner {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 560px;
+    height: 323px;
+}
+
+.services__inner {
+    width: 560px;
+    height: 323px;
+}
+
+.services__btn {
+    margin-top: 45px;
+}
+
+.services__top-content {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.services__top-img {
+    margin-top: 38px;
+}
+
+.services__bottom {
+    display: flex;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    justify-content: space-between;
+    font-family: 'Play', sans-serif;
+    margin-top: 100px;
+}
+
+.services-all__inner {
+    font-family: 'Play', sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 145px;
+}
+
+.right-arrow {
+    display: inline-flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.right-arrow::before,
+.right-arrow::after {
+    display: inline-flex;
+    position: absolute;
+    content: '';
+}
+
+.right-arrow::before {
+    margin-left: 16px;
+    top: 14px;
+    left: 0;
+    width: 43px;
+    height: 1px;
+    background-color: #000;
+}
+
+.right-arrow::after {
+    right: -40px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    top: 10px;
+}
+
+.services-all {
+    position: relative;
 }

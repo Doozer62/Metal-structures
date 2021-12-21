@@ -8,6 +8,9 @@
     <title>Metal structures</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Play:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/jquery.fancybox.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -108,11 +111,12 @@
             </h2>
             <div class="services__top">
                 <div class="services__left-inner">
-                <h4 class="services__top-title">ВЫЕЗД СПЕЦИАЛИСТА
-                    <p>ДЛЯ ПРОСЧЕТА ЗАКАЗА БЕСПЛАТНО!</p></h4>
+                    <h4 class="services__top-title">ВЫЕЗД СПЕЦИАЛИСТА
+                        <p>ДЛЯ ПРОСЧЕТА ЗАКАЗА БЕСПЛАТНО!</p>
+                    </h4>
                     <div class="services__inner-btn">
-                    <button class="services__btn">оставить заявку</button>
-                </div>
+                        <button class="services__btn">оставить заявку</button>
+                    </div>
                 </div>
                 <div class="services__inner">
                     <span class="services__top-content">
@@ -144,7 +148,72 @@
         </div>
     </section>
 
+    <section class="portfolio">
+        <div class="container">
+        <h3 class="portfolio__title">Выполненные работы</h3>
+        
+        <div class="portfolio__top">
+            <div class="portfolio__top-left">
+                
+                <p class="imglist">
+                    <a data-fancybox="gallery" href="img/portfolio/portfolio1.jpg"><img class="portfolio__img1" src="img/portfolio/portfolio1.jpg" alt="">
+                    </a>
+                    </p>
+                    <div class="imglist">
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio3.jpg"><img class="portfolio__img" src="img/portfolio/portfolio2.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio1.jpg"><img class="portfolio__img" src="img/portfolio/portfolio3.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio1.jpg"><img class="portfolio__img" src="img/portfolio/portfolio4.jpg" alt="">
+                        </a>
+                    </div>
+            </div>
+            <div class="portfolio__top-right">
+                <h3 class="portfolio__right-title">Цех п. Яблоновский</h3>
+                <div class="services__inner-btn">
+                    <button class="services__btn">оставить заявку</button>
+                </div>
+                
+            </div>
+        </div>
 
+        <div class="portfolio__bottom">
+            <div class="portfolio__bottom-left">
+                <h3 class="portfolio__left-title">Строительство производственно-складского здания 
+                    площадью 600 м2. п.Индустриальный</h3>
+                <div class="services__inner-btn">
+                    <button class="services__btn">оставить заявку</button>
+                </div>
+                
+            </div>
+            <div class="portfolio__bottom-right">
+                
+                <p class="imglist">
+                    <a data-fancybox="gallery" href="img/portfolio/portfolio5.jpg"><img class="portfolio__img1" src="img/portfolio/portfolio5.jpg" alt="">
+                    </a>
+                    </p>
+                    <div class="imglist">
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio6.jpg"><img class="portfolio__img" src="img/portfolio/portfolio6.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio7.jpg"><img class="portfolio__img" src="img/portfolio/portfolio7.jpg" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/portfolio/portfolio8.jpg"><img class="portfolio__img" src="img/portfolio/portfolio8.jpg" alt="">
+                        </a>
+                    </div>
+            </div>
+
+        </div>
+        <div class="more-work__inner-btn">
+        <button class="more-work__btn">cмотреть больше работ</button>
+    </div>
+</div>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

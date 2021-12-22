@@ -131,6 +131,7 @@ body {
     font-weight: normal;
     margin-top: 20px;
 }
+
 .more-work__btn,
 .header-btn,
 .services__btn {
@@ -199,6 +200,7 @@ body {
     justify-content: space-around;
 }
 
+.stages__title,
 .about__title,
 .services__title,
 .portfolio__title {
@@ -402,8 +404,88 @@ body {
     margin-left: 40px;
 }
 
-.more-work__inner-btn{
+.more-work__inner-btn {
     display: flex;
     justify-content: center;
     margin-top: 67px;
+}
+
+.stages__title {
+    position: relative;
+}
+
+.stages__title::before {
+    position: absolute;
+    content: '';
+    border-bottom: solid #B3DBFF 13px;
+    width: 167px;
+    top: 32px;
+    z-index: -5;
+}
+
+.boxes-inner {
+    display: flex;
+}
+
+.box-blue {
+    padding: 262px 52px 269px 137px;
+    background-color: #1B6EB8;
+}
+
+.box-blue__title {
+    font-size: 64px;
+    line-height: 80px;
+    font-family: 'Play', sans-serif;
+}
+
+.box-blue__description {
+    font-size: 20px;
+    line-height: 31px;
+    margin-top: 48px;
+}
+
+.box-bg {
+    width: 1431px;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/tokar.jpg);
+    margin-top: 157px;
+}
+
+.box-bg__inner {
+    width: 720px;
+    margin-left: 50px;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.box-bg__items {
+    display: flex;
+    margin-top: 170px;
+}
+
+.box-bg__items2 {
+    display: flex;
+    margin-top: 68px;
+}
+
+.box-bg__item {
+    width: 344px;
+    position: relative;
+}
+
+.box-bg__item::before {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #0075FF;
+    width: 113px;
+    top: 59px;
+    left: -72px;
+    transform: rotate(90deg);
+
+}
+
+.item-number {
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    line-height: 31px;
 }

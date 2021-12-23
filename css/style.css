@@ -200,6 +200,7 @@ body {
     justify-content: space-around;
 }
 
+.video-about__title,
 .warranty__title,
 .stages__title,
 .about__title,
@@ -214,6 +215,7 @@ body {
     z-index: 10;
 }
 
+.video-about__title::before,
 .warranty__title::before,
 .stages__title::before,
 .about__title::before,
@@ -593,4 +595,56 @@ body {
     text-align: center;
     margin-top: 19px;
     width: 349px;
+}
+
+.video-about {
+    padding: 35px 0 116px;
+}
+
+.video-about__title::before {
+    width: 215px;
+}
+
+.video-about__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.video__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 760px;
+    width: 100%;
+    height: 470px;
+    transition: all 0.5s;
+    border-radius: 20px;
+    margin-top: 63px;
+}
+
+.video__link:hover {
+    box-shadow: inset 0 0 0 100vw rgba(88, 88, 88, 0.5);
+}
+
+.video__link:hover svg {
+    transform: scale(2.0);
+}
+
+.icon-play {
+    transition: 1s;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.icon-play__inner {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    padding: 29px;
+}
+
+.icon-play:hover {
+    transform: scale(2.0);
 }

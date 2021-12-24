@@ -200,6 +200,7 @@ body {
     justify-content: space-around;
 }
 
+.thanks__title,
 .video-about__title,
 .warranty__title,
 .stages__title,
@@ -215,6 +216,7 @@ body {
     z-index: 10;
 }
 
+.thanks__title::before,
 .video-about__title::before,
 .warranty__title::before,
 .stages__title::before,
@@ -647,4 +649,23 @@ body {
 
 .icon-play:hover {
     transform: scale(2.0);
+}
+
+.thanks {
+    background-image: url(../img/mail-bg.jpg);
+    padding: 16px 0 85px;
+}
+
+.thanks__title {
+    color: #fff;
+}
+.thanks__title::before {
+    border-bottom: solid #1B6EB8 13px;
+    width: 313px;
+}
+
+.thanks__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 78px;
 }

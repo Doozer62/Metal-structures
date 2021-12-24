@@ -91,10 +91,39 @@ body {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
+    transition: all 0.5;
 }
 
 .menu-item:not(:first-child) {
     padding-left: 50px;
+}
+
+.menu-item {
+    transition: all 0.5;
+}
+
+.menu-item a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.menu-item a::after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.menu-item a:hover::after,
+.menu-item a:focus::after {
+    width: 100%;
 }
 
 .header-top__call {

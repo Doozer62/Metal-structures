@@ -174,6 +174,13 @@ body {
     color: #fff;
     margin-top: 55px;
     text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.more-work__btn:hover,
+.header-btn:hover,
+.services__btn:hover {
+    background-color: #1b6fb8be;
 }
 
 .header-bottom__items {
@@ -360,6 +367,11 @@ body {
     font-size: 20px;
     line-height: 30px;
     margin-top: 145px;
+    transition: all 0.5s;
+}
+
+.services-all__inner:hover .right-arrow{
+    margin-left: 10px;
 }
 
 .right-arrow {
@@ -368,6 +380,7 @@ body {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .right-arrow::before,
@@ -389,6 +402,7 @@ body {
     width: 43px;
     height: 1px;
     background-color: #000;
+    transition: all 0.5s;
 }
 
 .right-arrow::after {
@@ -399,6 +413,7 @@ body {
     width: 10px;
     height: 10px;
     top: 10px;
+    transition: all 0.5s;
 }
 
 .services-all {
@@ -438,6 +453,28 @@ body {
 
 .portfolio__bottom-right {
     margin-left: 40px;
+}
+
+.portfolio__img {
+    transition: all 0.5s;
+}
+
+.portfolio__img:hover {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+}
+
+.portfolio__img1 {
+    transition: all 0.5s;
+}
+
+.portfolio__img1:hover {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
 }
 
 .more-work__inner-btn {
@@ -686,6 +723,7 @@ body {
 .thanks {
     background-image: url(../img/mail-bg.jpg);
     padding: 16px 0 85px;
+    background-repeat: no-repeat;
 }
 
 .thanks__title {
@@ -701,6 +739,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 78px;
+}
+
+.thanks__img {
+    transition: all 0.5s ease-in-out;
+}
+
+.thanks__img:hover {
+    transform: scale(1.1);
 }
 
 .footer {

@@ -64,7 +64,7 @@ a {
 body {
     /* font-family: 'Play', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    background-color: #E5E5E5;
+    background-color: #fff;
     color: #fff;
 }
 
@@ -247,6 +247,8 @@ body {
     justify-content: space-around;
 }
 
+.work-maps__title,
+.dignities__title,
 .info__title,
 .footer__title,
 .thanks__title,
@@ -266,6 +268,8 @@ body {
     margin-left: 5px;
 }
 
+.work-maps__title::before,
+.dignities__title::before,
 .info__title::before,
 .footer__title::before,
 .thanks__title::before,
@@ -860,7 +864,12 @@ body {
     max-width: 1150px;
 }
 
+.info__list {
+    margin: 20px 0 0 20px;
+}
+
 .info__list-title {
+    font-family: 'Play', sans-serif;
     margin-top: 12px;
     font-weight: bold;
     font-size: 16px;
@@ -869,9 +878,99 @@ body {
 
 .info__list-inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.info__list-right {
+    margin-right: 300px;
+    margin-top: 20px;
 }
 
 .info__item {
     list-style: disc;
+}
+
+.info__list-img {
+    position: absolute;
+    right: 0;
+}
+
+.info__text-bottom {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 38px;
+}
+
+.dignities__title {
+    margin-top: 39px;
+}
+
+.dignities__title::before {
+    width: 489px;
+}
+
+.dignities__inner {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-top: 220px;
+}
+
+.dignities__content-left {
+    position: relative;
+    max-width: 280px;
+}
+
+.dignities__content-left::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/icons/shesterenka.svg);
+    width: 69px;
+    height: 71px;
+    top: -120px;
+}
+
+.dignities__content-center {
+    position: relative;
+    max-width: 300px;
+}
+
+.dignities__content-center::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/icons/kran.svg);
+    width: 64px;
+    height: 74px;
+    top: -120px;
+}
+
+.dignities__content-right {
+    position: relative;
+    max-width: 369px;
+}
+
+.dignities__content-right::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/icons/portfel.svg);
+    width: 69px;
+    height: 59px;
+    top: -120px;
+}
+
+.work-maps {
+    padding: 73px 0 115px;
+    background-color: #C4C4C4;
+}
+
+.work-maps__inner {
+    margin-top: 83px;
+}
+
+.work-maps__title::before {
+    width: 363px;
 }

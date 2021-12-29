@@ -247,6 +247,7 @@ body {
     justify-content: space-around;
 }
 
+.differences__title,
 .work-maps__title,
 .dignities__title,
 .info__title,
@@ -268,6 +269,7 @@ body {
     margin-left: 5px;
 }
 
+.differences__title::before,
 .work-maps__title::before,
 .dignities__title::before,
 .info__title::before,
@@ -973,4 +975,119 @@ body {
 
 .work-maps__title::before {
     width: 363px;
+}
+
+.main {
+    color: #000;
+}
+
+.main__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    font-family: 'Play', sans-serif;
+}
+
+.main__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.product__card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 47px;
+    font-family: 'Play', sans-serif;
+}
+
+.product__card-price {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.main__bottom {
+    display: flex;
+    gap: 40px;
+    margin-top: 125px;
+}
+
+.service-bg__inner {
+    position: absolute;
+    right: 0;
+    top: 740px;
+    z-index: -55;
+}
+
+.differences {
+    padding: 39px 0 15px;
+}
+
+.differences__title::before {
+    width: 613px;
+}
+
+.differences__inner {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    margin-top: 159px;
+}
+
+.differences__item1,
+.differences__item2,
+.differences__item3,
+.differences__item4 {
+    position: relative;
+    max-width: 198px;
+}
+
+.differences__item1::before {
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    content: '01';
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 20px;
+    color: rgba(27, 110, 184, 0.1);
+    top: -46px;
+    right: 71px;
+}
+
+.differences__item2::before {
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    content: '02';
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 20px;
+    color: rgba(27, 110, 184, 0.1);
+    top: -46px;
+    right: 71px;
+}
+
+.differences__item3::before {
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    content: '03';
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 20px;
+    color: rgba(27, 110, 184, 0.1);
+    top: -46px;
+    right: 71px;
+}
+
+.differences__item4::before {
+    font-family: 'Play', sans-serif;
+    position: absolute;
+    content: '04';
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 20px;
+    color: rgba(27, 110, 184, 0.1);
+    top: -46px;
+    right: 71px;
 }

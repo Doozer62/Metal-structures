@@ -247,6 +247,7 @@ body {
     justify-content: space-around;
 }
 
+.howitworks__title,
 .differences__title,
 .work-maps__title,
 .dignities__title,
@@ -269,6 +270,7 @@ body {
     margin-left: 5px;
 }
 
+.howitworks__title::before,
 .differences__title::before,
 .work-maps__title::before,
 .dignities__title::before,
@@ -653,6 +655,7 @@ body {
 }
 
 .warranty__caption {
+    color: #000;
     font-size: 24px;
     text-align: center;
     width: 365px;
@@ -1090,4 +1093,45 @@ body {
     color: rgba(27, 110, 184, 0.1);
     top: -46px;
     right: 71px;
+}
+
+.howitworks {
+    background-image: url(../img/service-bg2.jpg);
+    padding: 156px 87px;
+}
+
+.howitworks__title::before {
+    width: 480px;
+}
+
+.howitworks__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.howitworks__inner-left {
+    max-width: 660px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.howitworks__description {
+    margin-top: 88px;
+}
+
+.howitworks__list-title {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.howitworks__list { 
+    margin-top: 20px;
+}
+
+.howitworks__list-item {
+    list-style: disc;
+    margin-left: 25px;
 }
